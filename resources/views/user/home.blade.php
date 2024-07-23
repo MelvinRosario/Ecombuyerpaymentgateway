@@ -39,6 +39,7 @@
     top: 150px; 
     right: -600px;    
     animation: updown 10s linear infinite;
+    
 }
 
 @keyframes updown {
@@ -46,13 +47,14 @@
         transform: translateY(0px) translateX(0px);
     }
     50% {
-        transform: translateY(-30px) translateX(20px);
+        transform: translateY(-20px) translateX(20px);
     }
     75% {
         transform:  translateY(0px) translateX(0px); 
+        
     }
     100% {
-        transform: translateY(-30px) translateX(20px); 
+        transform: translateY(-20px) translateX(20px); 
     }
 }
 .homeanime2 {
