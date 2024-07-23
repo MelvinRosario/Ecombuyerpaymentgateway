@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class usercontroller extends Controller
 {
     public function home(){
-        return view('user.home');
+        return view('user.index');
     }
     public function services()
     {

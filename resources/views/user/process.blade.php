@@ -132,7 +132,7 @@
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="{{route('user.home')}}">Home</a></li>
+                <li><a href="{{route('user.index')}}">Home</a></li>
                 <li><a href="{{route('user.services')}}">Services</a></li>
                 <li><a href="{{route('user.process')}}" class="{{ request()->routeIs('user.process') ? 'active' : '' }}">Processing</a></li>
                 <li><a href="{{route('user.about')}}">About us</a></li>               

@@ -100,7 +100,7 @@
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="{{route('user.home')}}" class="{{ request()->routeIs('user.home') ? 'active' : '' }}">Home</a></li>
+                <li><a href="{{route('user.index')}}" class="{{ request()->routeIs('user.index') ? 'active' : '' }}">Home</a></li>
                 <li><a href="{{route('user.services')}}">Services</a></li>
                 <li><a href="{{route('user.process')}}">Processing</a></li>
                 <li><a href="{{route('user.about')}}">About us</a></li>               

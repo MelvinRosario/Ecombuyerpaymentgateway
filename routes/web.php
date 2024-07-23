@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [usercontroller::class,'home'])->name('user.home');
+Route::get('/', [usercontroller::class,'home'])->name('user.index');
 Route::GET('/servies',[usercontroller::class,'services'])->name('user.services');
 Route::GET('/process',[usercontroller::class,'process'])->name('user.process');
 Route::GET('/aboutus',[usercontroller::class,'about'])->name('user.about');
