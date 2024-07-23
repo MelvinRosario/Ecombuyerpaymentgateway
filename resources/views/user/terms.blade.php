@@ -87,7 +87,7 @@
             <div class="row">
                 <div class="col-lg-7 col-md-7 col-12 termhead">
                     <h1 data-aos="fade-left" data-aos-delay="100">Terms & Conditions</h1>
-                    <div data-aos="fade-left" data-aos-delay="400" class="bread"><a href="{{route('user.home')}}">Home</a><span class="mx-2">/</span><span>Terms & Conditions</span></div>
+                    <div data-aos="fade-left" data-aos-delay="400" class="bread"><a href="{{route('user.index')}}">Home</a><span class="mx-2">/</span><span>Terms & Conditions</span></div>
                 </div>
                 <div class="col-lg-5 col-md-5 col-12 hiddenimg">
                     <img data-aos="fade-up"  src="{{env('APP_URL')}}/assets/img/termsimg.png" alt="">
