@@ -42,6 +42,22 @@
     
 }
 
+.progress {
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 1;
+	width: 100%;
+}
+.progress--wpr {
+	width: 100%;
+	height: 8px;
+}
+.progress--bar {
+	height: 8px;
+	background-color: black;
+	width: 0%;
+}
+
 @keyframes updown {
     0% {
         transform: translateY(0px) translateX(0px);
@@ -108,7 +124,14 @@
             </ul>
             <h1 class="logo">Ecom Buyer</h1>
         </div>
-    </nav>
+    </nav>    
+    {{-- end --}}
+    {{-- progress bar --}}
+    <div class="progress">
+        <div class="progress--wpr">
+            <div class="progress--bar"></div>
+        </div>
+    </div>
     {{-- end --}}
    
     {{-- hero container --}}
@@ -448,6 +471,20 @@
                 navbar.style.boxShadow = 'none'; 
             }
         });
+</script>
+<script>  
+document.addEventListener("DOMContentLoaded", function() {
+	document.addEventListener("scroll", function() {
+		getProgress();
+	});
+
+	function getProgress() {					
+		var topPos = document.documentElement.scrollTop;						
+		var remaining = document.documentElement.scrollHeight - document.documentElement.clientHeight;				
+		var percentage = (topPos / remaining) * 100;
+		document.querySelector(".progress--bar").style.width = percentage + "%";
+	}
+});
 </script>
 <script>
     document.addEventListener('DOMContentLoaded', function() {

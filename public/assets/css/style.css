@@ -67,24 +67,24 @@ font-size: 1.3rem;
     left: 0;
     bottom: 0;
     width: 70%;
-    height: 2px; /* Thickness of the border */
+    height: 2px; 
     background: var(--main-color);
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.3s ease;
 }
-/* Style for the active link */
+
 .menu-items li a.active::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 70%; /* Adjust this as needed */
-    height: 2px; /* Thickness of the border */
-    background: var(--main-color); /* Border color */
-    transform: scaleX(1); /* Ensure it is visible */
-    transform-origin: bottom left; /* Ensure it stretches to the left */
-    transition: transform 0.3s ease; /* Smooth transition */
+    width: 70%; 
+    height: 2px; 
+    background: var(--main-color); 
+    transform: scaleX(1); 
+    transform-origin: bottom left; 
+    transition: transform 0.3s ease;
 }
 .menu-items li a:hover::after {
     transform: scaleX(1);
