@@ -127,11 +127,11 @@
     </nav>    
     {{-- end --}}
     {{-- progress bar --}}
-    <div class="progress">
+    {{-- <div class="progress">
         <div class="progress--wpr">
             <div class="progress--bar"></div>
         </div>
-    </div>
+    </div> --}}
     {{-- end --}}
    
     {{-- hero container --}}
@@ -472,7 +472,7 @@
             }
         });
 </script>
-<script>  
+{{-- <script>  
 document.addEventListener("DOMContentLoaded", function() {
 	document.addEventListener("scroll", function() {
 		getProgress();
@@ -485,7 +485,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		document.querySelector(".progress--bar").style.width = percentage + "%";
 	}
 });
-</script>
+</script> --}}
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         AOS.init({
