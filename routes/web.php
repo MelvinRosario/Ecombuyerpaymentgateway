@@ -14,12 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [usercontroller::class,'home'])->name('user.index');
+Route::GET('/', [usercontroller::class,'home'])->name('user.index');
 Route::GET('/servies',[usercontroller::class,'services'])->name('user.services');
 Route::GET('/process',[usercontroller::class,'process'])->name('user.process');
 Route::GET('/aboutus',[usercontroller::class,'about'])->name('user.about');
 Route::GET('/contactus',[usercontroller::class,'contact_us'])->name('user.contact');
 Route::GET('/terms',[usercontroller::class,'terms'])->name('user.terms');
 Route::GET('/privacy',[usercontroller::class,'privacy'])->name('user.privacy');
-
-
