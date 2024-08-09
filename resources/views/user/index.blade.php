@@ -42,21 +42,6 @@
     
 }
 
-.progress {
-	position: fixed;
-	top: 0; left: 0;
-	z-index: 1;
-	width: 100%;
-}
-.progress--wpr {
-	width: 100%;
-	height: 8px;
-}
-.progress--bar {
-	height: 8px;
-	background-color: black;
-	width: 0%;
-}
 
 @keyframes updown {
     0% {
