@@ -30,14 +30,14 @@
 .counter-container .counter-value {
   opacity: 1;
 }
-.homeanime1, .homeanime2{
+.homeanime1{
     position: absolute;    
 }
 .homeanime1 {
     width: 600px;
     position: absolute;
     top: 150px; 
-    right: -600px;    
+    right: -100px;    
     animation: updown 10s linear infinite;
     
 }
@@ -111,22 +111,14 @@
         </div>
     </nav>    
     {{-- end --}}
-    {{-- progress bar --}}
-    {{-- <div class="progress">
-        <div class="progress--wpr">
-            <div class="progress--bar"></div>
-        </div>
-    </div> --}}
-    {{-- end --}}
+
    
-    {{-- hero container --}}
-    <div class="main-container">
+    {{-- hero container --}}    
         <div class="container-fluid hero-container" >
             <div class="container hero" style="background: none !important">
                 <div class="row"> 
-                    <div class="col-md-12 col-lg-8 hero1 " data-aos="fade-left">
-                        <div style="display: flex;flex-direction:column;justify-content:flex-start" class="hero11">
-                                      
+                    <div class="col-md-12 col-lg-8 hero1 ">
+                        <div style="display: flex;flex-direction:column;justify-content:flex-start" data-aos="fade-left">                                      
                            <h3 class="mb-3 head1" style="color: var(--sec-color);">
                             Welcome to Your Financial Hub
                            </h3>
@@ -136,22 +128,21 @@
                             <a href="" class="button1">Get Started</a>
                             <a href="" class="button2">Sign up</a>
                            </div>
-                        </div>
-                        
-                            <img src="{{env('APP_URL')}}/assets/img/homeanimationimg_wb.png" data-aos="zoom-in" class="homeanime1" alt="">
-                            {{-- <img src="{{env('APP_URL')}}/assets/img/homeanimationimg2_wb.png" class="homeanime2" alt=""> --}}
-                        
+                        </div>                                                                           
                     </div>
-                    
+                    <div class="col-lg-4" style="position: relative">
+                        <img src="{{env('APP_URL')}}/assets/img/homeanimationimg_wb.png" data-aos="zoom-in" class="homeanime1" alt="">
+                        {{-- <img src="{{env('APP_URL')}}/assets/img/homeanimationimg2_wb.png" class="homeanime2" alt=""> --}}
+                    </div>
                 </div>
             </div>
         </div>
     
     {{-- end --}}
      {{-- conunt --}}
-     <div class="container" data-aos="zoom-in">
-        <div class="row card countcard">
-            <div class="col-xl-3 col-md-3 col-sm-6">
+     <div class="container d-flex justify-content-center align-items-centen" >
+        <div class="row card countcard" data-aos="zoom-in">
+            <div class="col-xl-3 col-md-3 col-3">
                 <div class="single-area d-flex align-items-center justify-content-center">
                     <div class="text-area text-center">
                         <h2><span class="counter" data-target="50">0+</span></h2>
@@ -159,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-md-3 col-sm-6">
+            <div class="col-xl-3 col-md-3 col-3">
                 <div class="single-area d-flex align-items-center justify-content-center">
                     <div class="text-area text-center">
                         <h2><span class="counter" data-target="100">0+</span></h2>
@@ -167,7 +158,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-md-3 col-sm-6">
+            <div class="col-xl-3 col-md-3 col-3">
                 <div class="single-area d-flex align-items-center justify-content-center">
                     <div class="text-area text-center">
                         <h2><span class="counter" data-target="70">0+</span></h2>
@@ -175,7 +166,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-md-3 col-sm-6">
+            <div class="col-xl-3 col-md-3 col-3">
                 <div class="single-area d-flex align-items-center justify-content-center">
                     <div class="text-area text-center">
                         <h2><span class="counter">7</span><span>/</span><span class="counter" data-target="24">0</span></h2>
@@ -236,15 +227,15 @@
                     <div class="row g-4">
                         <div class="col-md-6">
                             <div class="row g-4">
-                                <div class="col-12" data-aos="zoom-in" data-aos-delay="100">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center " >
+                                <div class="col-12" >
+                                    <div class="service-item d-flex flex-column justify-content-center text-center " data-aos="zoom-in" data-aos-delay="100">
                                         <img src="{{env('APP_URL')}}/assets/img/grpimg1.png" alt="">
                                         <h5 class="my-2">24/7 Customer Support</h5>
                                         <p>Enjoy round-the-clock support from our dedicated team. Whenever you need assistance or have inquiries, our responsive customer support is ready to provide solutions and guidance.</p>                                    
                                     </div>
                                 </div>
-                                <div class="col-12" data-aos="zoom-in" data-aos-delay="200">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center" >
+                                <div class="col-12" >
+                                    <div class="service-item d-flex flex-column justify-content-center text-center" data-aos="zoom-in" data-aos-delay="200">
                                         <img src="{{env('APP_URL')}}/assets/img/grpimg3.png" alt=""> 
                                         <h5 class="my-2">100% Transparent</h5>
                                         <p>Unparalleled transparency in every transaction. No hidden fees or surprises—just clear, straightforward financial interactions for complete peace of mind.</p>                                    
@@ -254,15 +245,15 @@
                         </div>
                         <div class="col-md-6 pt-md-4">
                             <div class="row g-4">
-                                <div class="col-12" data-aos="zoom-in" data-aos-delay="300">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center" >    
+                                <div class="col-12" >
+                                    <div class="service-item d-flex flex-column justify-content-center text-center" data-aos="zoom-in" data-aos-delay="300">    
                                         <img src="{{env('APP_URL')}}/assets/img/grpimg2.png" alt="">                                
                                         <h5 class="my-2">Cutting-edge Security</h5>
                                         <p>Benefit from cutting-edge security, shielding transactions against evolving threats and vulnerabilities, ensuring your financial transactions are always secure and worry-free.</p>                                    
                                     </div>
                                 </div>
-                                <div class="col-12" data-aos="zoom-in" data-aos-delay="400">
-                                    <div class="service-item d-flex flex-column justify-content-center text-center ">       
+                                <div class="col-12" >
+                                    <div class="service-item d-flex flex-column justify-content-center text-center " data-aos="zoom-in" data-aos-delay="400">       
                                         <img src="{{env('APP_URL')}}/assets/img/grpimg4.png" alt="">                            
                                         <h5 class="my-2">International Network</h5>
                                         <p>Seamlessly connect globally with our extensive international network. Whether sending or receiving payments, experience swift, secure, and borderless transactions across the world.</p>                                
@@ -277,9 +268,9 @@
     </div>
     {{-- end --}}
     {{-- global reach --}}
-    <div class="container-fluid"  style="background: #F2F3F9" data-aos="fade-up">
+    <div class="container-fluid"  style="background: #F2F3F9">
         <div class="container my-3 p-5">
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-lg-6 col-md-6 col-12 gbox" style="display: flex;flex-direction: column">
                     <h1>Global Reach:</h1>
                     <div class="gitems">
@@ -378,25 +369,33 @@
                 <span style="color: var(--sec-color)">It's easier than you think. Follow 3 simple easy steps</span>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-12 stepcard" data-aos="fade-up-right">
+                <div class="col-lg-3 col-md-6 col-12 ">
+                    <div class="stepcard"  data-aos="fade-down">
                     <img src="{{env('APP_URL')}}/assets/img/stepimg1.png" alt="">
                     <h5>Register for free</h4>
                     <span>Simply sign up online for free ...</span>
+                    </div>                    
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 stepcard"  data-aos="zoom-in-up">
-                    <img src="{{env('APP_URL')}}/assets/img/stepimg2.png" alt="">
+                <div class="col-lg-3 col-md-6 col-12"  >
+                    <div class="stepcard" data-aos="zoom-in-up">
+                        <img src="{{env('APP_URL')}}/assets/img/stepimg2.png" alt="">
                     <h5>KYC verification</h4>
                     <span>Verify your identity with ease through our KYC process...</span>
+                    </div>                    
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 stepcard"  data-aos="zoom-in-up">
-                    <img src="{{env('APP_URL')}}/assets/img/stepimg3.png" alt="">
+                <div class="col-lg-3 col-md-6 col-12 ">
+                    <div class="stepcard"   data-aos="zoom-in-up">
+                        <img src="{{env('APP_URL')}}/assets/img/stepimg3.png" alt="">
                     <h5>Start processing</h4>
                     <span>Initiate seamless transactions with our swift and efficient processing system...</span>
+                    </div>                    
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 stepcard" data-aos="fade-up-left">
-                    <img src="{{env('APP_URL')}}/assets/img/stepimg4.png" alt="">
-                    <h5>You're all done!</h4>
-                    <span>We inform you when the money has been sent and can also ...</span>
+                <div class="col-lg-3 col-md-6 col-12 ">
+                    <div class="stepcard"  data-aos="fade-down">
+                        <img src="{{env('APP_URL')}}/assets/img/stepimg4.png" alt="">
+                        <h5>You're all done!</h4>
+                        <span>We inform you when the money has been sent and can also ...</span>
+                    </div>                   
                 </div>
             </div>
             <div class="stoday">
@@ -497,9 +496,21 @@ document.addEventListener("DOMContentLoaded", function() {
       return false;
     });
 </script>
-
 <script>
     document.addEventListener('DOMContentLoaded', function () {
+        // Navbar background change on scroll
+        window.addEventListener('scroll', function() {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 0) {
+                navbar.style.backgroundColor = '#fff';     
+                navbar.style.boxShadow = '2px 3.464px 24px 0px rgba(106, 105, 194, 0.25)';     
+            } else {
+                navbar.style.backgroundColor = 'transparent'; 
+                navbar.style.boxShadow = 'none'; 
+            }
+        });
+
+        // Counter animation
         function animateCounter(element) {
             const target = +element.getAttribute('data-target');
             const duration = 2000; 
@@ -540,7 +551,8 @@ document.addEventListener("DOMContentLoaded", function() {
         window.addEventListener('scroll', checkCounters);
         checkCounters(); // Initial check
     });
-    </script>
+</script>
+
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow.js/1.1.2/wow.min.js"></script>

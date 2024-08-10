@@ -146,15 +146,15 @@
         <div class="container-fluid hero-container" >
             <div class="container hero" style="background: none !important">
                 <div class="row"> 
-                    <div class="col-md-6 col-lg-6 hero1" data-aos="fade-left">
-                        <div style="display: flex;flex-direction:column;justify-content:flex-start" class="servicemain">                                      
+                    <div class="col-md-6 col-lg-6 hero1" >
+                        <div style="display: flex;flex-direction:column;justify-content:flex-start" class="servicemain" data-aos="fade-left">                                      
                             <h6 class="mb-3">International Payments</h6>
                             <h1 class="mb-3">Simplify Global Payments with Ecom Buyer</h1>
                             <p class="mb-3">Unleash seamless international payments and receivables with our all-in-one platform. Manage everything from your fingertips and simplify your payment processes with our versatile solutions:</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 hidden" data-aos="fade-right" style="display:flex;justify-content:center;align-items:center">
-                        <img src="{{env('APP_URL')}}/assets/img/service_globe_img-removebg.png" style="width: 100%" alt="">
+                    <div class="col-md-6 col-lg-6 hidden"style="display:flex;justify-content:center;align-items:center">
+                        <img src="{{env('APP_URL')}}/assets/img/service_globe_img-removebg.png"  data-aos="fade-right"  style="width: 100%" alt="">
                     </div>
                     
                 </div>

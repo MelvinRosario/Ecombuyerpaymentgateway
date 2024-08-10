@@ -63,7 +63,7 @@
 </head>
 
 <body>
-    <a href="#" class="scrollToTop active"><i class="fas fa-angle-double-up"></i></a>
+    {{-- <a href="#" class="scrollToTop active"><i class="fas fa-angle-double-up"></i></a> --}}
 {{-- navbar --}}
     <nav class="navbar" id="navbar">
         <div class="navbar-container container">

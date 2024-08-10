@@ -17,11 +17,11 @@ font-size: 62.5%;
 display: none;
 }
 
-.container{
+/* .container{
 max-width: 1200px;
 width: 90%;
 margin: auto;
-}
+} */
 
 .navbar {
         background-color: transparent; /* Initial background color */
@@ -35,7 +35,7 @@ margin: auto;
 .navbar-container{
 display: flex;
 justify-content: space-between;
-height: 70px;
+height: 60px;
 margin-top: 10px;
 background: transparent;
 align-items: center;
@@ -48,7 +48,7 @@ display: flex;
 .logo{
 order: 1;
 font-size: 2rem;
-color: var(--main-color)
+color: var(--main-color);
 }
 
 .menu-items li {
@@ -191,7 +191,7 @@ font-weight: 500;
 .logo{
     position: absolute;
     top: 10px;
-    right: 0px;
+    right: 10px;
     font-size: 2rem;
 }
 
@@ -390,6 +390,7 @@ background-repeat: no-repeat;
     padding: 50px;
     border-radius: 30px;
     margin-top: -90px; 
+    width: 100%;
     background: var(--main-color);
     color: #fff;
     box-shadow: 2px 3.464px 24px 0px rgba(106, 105, 194, 0.25);
@@ -454,7 +455,7 @@ li{
     margin-right: 0 !important; 
 }
 .fcardbox .card:hover{
-    box-shadow: 2px 3.464px 24px 0px rgba(106, 105, 194, 0.25);
+    box-shadow: 2px 3.464px 24px 0px rgba(106, 105, 194, 0.25) !important;
 }
 .fcardbox .card img{
     width: 45%;
@@ -495,8 +496,7 @@ li{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    position: relative; 
+    padding: 20px;     
     padding-right: 40px;
 }
 .stepcard img{
@@ -545,7 +545,7 @@ li{
     margin-bottom: 20px;
 }
 .stoday .create{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 600;
     color: var(--sec-color);
     margin-bottom: 20px;
@@ -632,6 +632,21 @@ footer li a:hover {
 }
 .head3{
     font-size: 17px;
+}
+.counter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.countcard{
+    width: 95% !important;   
+}
+
+.text-area p{
+    font-size: 12px;
+}
+.text-area .counter{
+    font-size: 25px;
 }
 .countcard {   
     padding: 11px;    

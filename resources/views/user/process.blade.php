@@ -118,6 +118,7 @@
 }
 }
     </style>
+    
 </head>
 
 <body>
@@ -144,24 +145,23 @@
     {{-- end --}}
    
     {{-- hero container --}}
-    <div class="main-container">
+    
         <div class="container-fluid hero-container" >
             <div class="container hero" style="background: none !important">
                 <div class="row"> 
-                    <div class="col-md-6 col-lg-6 hero1" data-aos="fade-left">
-                        <div style="display: flex;flex-direction:column;justify-content:flex-start" class="servicemain">                                                                  
+                    <div class="col-md-6 col-lg-6 hero1">
+                        <div style="display: flex;flex-direction:column;justify-content:flex-start" class="servicemain" data-aos="fade-left">                                                                  
                             <h1 class="mb-3">Ecom Buyer: Delivering Exceptional Payment Processing Solutions</h1>
                             <p class="mb-3">Ecom Buyer is built on a fundamental commitment to excellence, ensuring that your partnership with us translates to tangible success. We understand that your business growth is paramount, and this unwavering dedication fuels every collaboration. Open a Free Account and Experience Seamless Integration:</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 hidden" data-aos="fade-right" style="display:flex;justify-content:center;align-items:center">
-                        <img src="{{env('APP_URL')}}/assets/img/paymentprocess.png" style="width: 100%" alt="">
+                    <div class="col-md-6 col-lg-6 hidden"  style="display:flex;justify-content:center;align-items:center">
+                        <img src="{{env('APP_URL')}}/assets/img/paymentprocess.png" style="width: 100%" data-aos="fade-right" alt="">
                     </div>
                     
                 </div>
             </div>
         </div>
-    </div>
     <div class="container-fluid mtstyle">
         <div class="container">
             <div class="row d-flex justify-content-center align-items-center" data-aos="fade-up">
@@ -250,19 +250,19 @@
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-    // JavaScript to change navbar background on scroll
+    // Navbar background change on scroll
     window.addEventListener('scroll', function() {
-            var navbar = document.getElementById('navbar');
-            if (window.scrollY > 0) {
-                navbar.style.backgroundColor = '#fff';     
-                navbar.style.boxShadow = '2px 3.464px 24px 0px rgba(106, 105, 194, 0.25)';     
-            } else {
-                navbar.style.backgroundColor = 'transparent'; 
-                navbar.style.boxShadow = 'none'; 
-            }
-        });
-</script>
-<script>
+        var navbar = document.getElementById('navbar');
+        if (window.scrollY > 0) {
+            navbar.style.backgroundColor = '#fff';     
+            navbar.style.boxShadow = '2px 3.464px 24px 0px rgba(106, 105, 194, 0.25)';     
+        } else {
+            navbar.style.backgroundColor = 'transparent'; 
+            navbar.style.boxShadow = 'none'; 
+        }
+    });
+
+    // Initialize AOS (Animate On Scroll)
     document.addEventListener('DOMContentLoaded', function() {
         AOS.init({
             duration: 1000, 
@@ -270,22 +270,20 @@
             once: true 
         });
     });
-</script>
-<script>
-     // Scroll Top
-     var ScrollTop = $(".scrollToTop");
+
+    // Scroll to top functionality
     $(window).on('scroll', function () {
-      if ($(this).scrollTop() < 500) {
-        ScrollTop.removeClass("active");
-      } else {
-        ScrollTop.addClass("active");
-      }
+        var scrollTop = $(".scrollToTop");
+        if ($(this).scrollTop() < 500) {
+            scrollTop.removeClass("active");
+        } else {
+            scrollTop.addClass("active");
+        }
     });
+
     $('.scrollToTop').on('click', function () {
-      $('html, body').animate({
-        scrollTop: 0
-      }, 500);
-      return false;
+        $('html, body').animate({ scrollTop: 0 }, 500);
+        return false;
     });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
