@@ -140,7 +140,7 @@
     
     {{-- end --}}
      {{-- conunt --}}
-     <div class="container d-flex justify-content-center align-items-centen" >
+     <div class="container counter-container" >
         <div class="row card countcard" data-aos="zoom-in">
             <div class="col-xl-3 col-md-3 col-3">
                 <div class="single-area d-flex align-items-center justify-content-center">
