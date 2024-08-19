@@ -213,7 +213,7 @@ input:focus{
                 <div class="col-lg-12 col-md-12 col-12 mb-4 col-12 d-flex justify-content-start align-items-center">
                     <ul style="display:flex;flex-direction:row">
                         <li>
-                           <a href=""> About us</a>
+                           <a href="{{route('user.about')}}"> About us</a>
                         </li>
                         <li>
                             <a href="{{route('user.terms')}}">Terms</a>
@@ -222,7 +222,7 @@ input:focus{
                             <a href="{{route('user.privacy')}}">Privacy</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="{{route('user.contact')}}">Contact</a>
                          </li>
                     </ul>
                 </div>

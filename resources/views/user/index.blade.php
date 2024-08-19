@@ -121,7 +121,7 @@
                            <p class="mb-5 head3" style="color: var(--main-color);">Ecom Buyer is your secure and efficient solution for managing all your financial transactions in one place. In today's digital landscape, managing finances efficiently and securely is crucial. That's where Ecom Buyer comes in, offering a powerful yet simple payment processing platform designed to streamline your financial operations and provide peace of mind.</p>
                            <div class="herobuttons w-100">
                             <a href="" class="button1">Get Started</a>
-                            <a href="" class="button2">Sign up</a>
+                            <a href="" class="button2">Sign in</a>
                            </div>
                         </div>                                                                           
                     </div>
@@ -414,7 +414,7 @@
                 <div class="col-lg-12 col-md-12 col-12 mb-4 col-12 d-flex justify-content-start align-items-center">
                     <ul style="display:flex;flex-direction:row">
                         <li>
-                           <a href=""> About us</a>
+                           <a href="{{route('user.about')}}"> About us</a>
                         </li>
                         <li>
                             <a href="{{route('user.terms')}}">Terms</a>
@@ -423,7 +423,7 @@
                             <a href="{{route('user.privacy')}}">Privacy</a>
                         </li>
                         <li>
-                            <a href="">Contact</a>
+                            <a href="{{route('user.contact')}}">Contact</a>
                          </li>
                     </ul>
                 </div>
