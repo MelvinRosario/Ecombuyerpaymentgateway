@@ -16,11 +16,6 @@
   /* font-size: 3rem;  */
   /* font-weight: bold; */
 }
-.counter-container {
-  position: relative;
-  display: inline-block;
-}
-
 .counter-value {
   position: absolute;
   opacity: 0;
@@ -141,7 +136,7 @@
     {{-- end --}}
      {{-- conunt --}}
      <div class="container counter-container" >
-        <div class="row card countcard" data-aos="zoom-in">
+        <div class="row card countcard ">
             <div class="col-xl-3 col-md-3 col-3">
                 <div class="single-area d-flex align-items-center justify-content-center">
                     <div class="text-area text-center">
